@@ -1,0 +1,15 @@
+.experience-section {
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 0.5s ease; /* Smooth transition for height changes */
+    max-height: 50px; /* Initially collapse the content */
+  }
+  
+  .experience-section.expanded {
+    max-height: 200px; /* Expand the content */
+  }
+  
+  .experience-section .content {
+    padding-top: 10px; /* Add padding to the content */
+  }
+  
