@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
- // Import the CSS file for styling
 
 function ExperienceSection() {
   const [isExpanded, setIsExpanded] = useState(false);

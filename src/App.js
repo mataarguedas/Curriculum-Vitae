@@ -5,7 +5,9 @@ import confetti from 'canvas-confetti';
 import ExperienceSection from './ExperienceSection';
 import EducationSection from './EducationSection';
 import SkillsSection from './SkillsSection';
-
+import ContactButton from './ContactButton'; // Import the ContactButton component
+import LinkedInIcon from './LinkedInIcon';
+import GithubIcon from './GithubIcon';
 
 function App() {
   const handleNameClick = () => {
@@ -16,22 +18,28 @@ function App() {
     <div className="App">
       <div className="click-text-container">
         <p className="click-text">Click my name!</p>
-        <div className="curved-arrow">
-          <svg height="100" width="200">
-            <path d="M10 30 Q 100 100, 190 30" stroke="white" strokeWidth="5" fill="none" />
-            <polygon points="185,25 195,30 185,35" fill="white" />
-          </svg>
-        </div>
       </div>
       <header className="App-header" onClick={handleNameClick}>
         <h1>Emmanuel Mata</h1>
-        <p>Data Analyst and Developer</p>
+        
       </header>
       <main>
+        <div className="career">
+          <h1>
+            Data Analyst & Developer
+          </h1>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+        
+        <LinkedInIcon url="https://www.linkedin.com/in/emmanuel-enrique-m-a0a9ab82" /> 
+        <GithubIcon url="https://github.com/mataarguedas" />
+
+        </div>
         <section><ExperienceSection/></section>
         <section><EducationSection/></section>
         <section><SkillsSection/></section>
-        <section><SliderComponent /></section>
+        <section><SliderComponent /></section> <br/>
+        <ContactButton />
       </main>
     </div>
   );

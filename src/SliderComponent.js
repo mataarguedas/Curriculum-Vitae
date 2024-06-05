@@ -27,9 +27,6 @@ const SliderComponent = () => {
         <div>
           <FontAwesomeIcon icon={faCss3Alt} size="6x" />
         </div>
-        <div>
-        <img src=""></img>
-        </div>
       </Slider>
     </div>
   );

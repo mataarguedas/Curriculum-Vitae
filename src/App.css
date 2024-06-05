@@ -85,3 +85,8 @@ section {
 .slider svg {
   color: white;
 }
+
+
+.career{
+  justify-content: left;
+}
