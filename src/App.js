@@ -5,7 +5,6 @@ import confetti from 'canvas-confetti';
 import ExperienceSection from './ExperienceSection';
 import EducationSection from './EducationSection';
 import SkillsSection from './SkillsSection';
-import ContactButton from './ContactButton'; // Import the ContactButton component
 import LinkedInIcon from './LinkedInIcon';
 import GithubIcon from './GithubIcon';
 
@@ -22,14 +21,16 @@ function App() {
       <header className="App-header" onClick={handleNameClick}>
         <h1>Emmanuel Mata</h1>
         
+        
       </header>
       <main>
         <div className="career">
           <h1>
             Data Analyst & Developer
           </h1>
+          <h3>Heredia, Costa Rica</h3>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '20px' }}>
         
         <LinkedInIcon url="https://www.linkedin.com/in/emmanuel-enrique-m-a0a9ab82" /> 
         <GithubIcon url="https://github.com/mataarguedas" />
@@ -39,7 +40,7 @@ function App() {
         <section><EducationSection/></section>
         <section><SkillsSection/></section>
         <section><SliderComponent /></section> <br/>
-        <ContactButton />
+        
       </main>
     </div>
   );

@@ -90,3 +90,15 @@ section {
 .career{
   justify-content: left;
 }
+
+@media screen and (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App-header h1 {
+    font-size: 2rem; /* Further adjust font size for even smaller screens */
+  }
+}
